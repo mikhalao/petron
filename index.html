@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petron</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- Box Icons-->
+    <link rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+   <!-- Link Swiper's CSS -->
+  <link 
+  rel="stylesheet" 
+  href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <!-- Menu Icon -->
+
+        <div class="bx bx-menu" id=""menu-icon> </div>
+        <!-- Nav List -->
+        <ul class="navbar">
+        <li><a href="home.html" class="home-active">HOME</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        
+        </ul>
+    </header>
+    <!--home-->
+        <section>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">                
+                <div class="home-text">
+                    <span><br><br><br><br><br>Petron</span>
+                    <h1>We fuel HOPE. <br> We fuel SUCCESS. <br> We fuel PROGRESS. <br> We are a FORCE FOR CHANGE.</h1>
+                    <a href="#" class="btn">Watch Now<i class='bx bx-right-arrow-alt' ></i></a>
+                    
+                </div>
+             
+            </div>
+            <div class="swiper-slide">
+                <div class="home-text">
+                <span></span>
+                <h1><br> <br><br><br><br></h1>
+                <a href="#" class="btn">Shop Now<i class='bx bx-right-arrow-alt' ></i></a>
+                
+            </div>
+        </div>
+            <div class="swiper-slide"><div class="home-text">
+                <span></span>
+                <h1><br><br>WE WANT <br> TO SERVE YOU <br> BETTER.</h1>
+                <a href="#" class="btn">Contact Us<i class='bx bx-right-arrow-alt' ></i></a>
+                
+            </div>  
+        </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+   
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+        <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  
+  </script>
+   </section>
+ <footer>
+        <p>&copy; 2024 Petron Website. For Educational Purposes Only.</p>
+    </footer>
+    </body>
+    </html>
